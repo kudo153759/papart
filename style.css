@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+
+
+body{
+    background: linear-gradient(45deg,pink,violet);
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    min-width: none;
+    color: pink;
+    text-shadow: 0 0 3px rgb(60, 0, 60);
+    font-size: 14px;
+}
+
+mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+.btn {
+    max-width: 50%;
+    max-height: 50%;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    color: white;
+    height: flex;
+    width: flex;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+#msg {
+    height: flex;
+    width: 100%;
+    color: white;
+    background: transparent;
+    bottom: 0;
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+    align-items: center;
+    position: absolute;
+    -webkit-animation: bounce .4s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+      text-shadow:
+                  0 5px 0 #ccc,
+                  0 2px 3px rgba(0, 0, 0, 1);  
+  }
+  100% {
+    transform:translateY(-20px);
+    text-shadow:  0 50px 0 #black,
+                  0 0px 20px rgba(0, 0, 0, .8);
+  }
+}
+
+
+
+#container {
+  
+    position: relative;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.438);
+    box-shadow: 5px 5px 5px 2px black;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+}
+.fa-heart {
+    color: rgb(60, 0, 60);
+    font-size: 25px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
+.child-element {
+    position: sticky;
+    display: flex;
+    position: absolute;
+    top: 0;
+    max-width: 90%;
+  max-width: 90%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
